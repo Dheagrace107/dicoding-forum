@@ -31,7 +31,3 @@ describe('LoginForm component', () => {
     });
   });
 });
-
-it('should fail for CI testing', () => {
-  expect(1).toBe(2);
-});
