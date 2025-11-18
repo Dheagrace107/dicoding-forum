@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          eol: crlf
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,6 +30,5 @@ jobs:
       - name: Run Unit & Integration Tests
         run: npm test -- --run
 
-      # Optional: Build Step
-      - name: Build Production
+      - name: Build production (optional)
         run: npm run build
