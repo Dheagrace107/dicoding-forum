@@ -1,5 +1,8 @@
+// External imports
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
+
+// Internal imports
 import LoginForm from '../../components/Forms/LoginForm';
 
 describe('LoginForm component', () => {

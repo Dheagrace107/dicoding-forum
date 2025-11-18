@@ -28,5 +28,6 @@ jobs:
       - name: Run Unit & Integration Tests
         run: npm test -- --run
 
-      - name: Build production (optional)
+      # Optional: Build Step
+      - name: Build Production
         run: npm run build
