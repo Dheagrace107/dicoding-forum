@@ -69,4 +69,11 @@ module.exports = {
 
         'jsx-a11y/label-has-associated-control': 'off',
     },
+
+    overrides: [{
+        files: ['cypress/**/*.js'],
+        globals: {
+            cy: 'readonly',
+        },
+    }, ],
 };
